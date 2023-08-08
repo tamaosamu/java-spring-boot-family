@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: family-demo
+  datasource:
+    url: jdbc:mysql://localhost:3306/family?serverTimezone=UTC
+    username: root
+    password: bingchan
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+# mybatis配置
+mybatis:
+  type-aliases-package: com.family.entity    # 实体类所在的位置
