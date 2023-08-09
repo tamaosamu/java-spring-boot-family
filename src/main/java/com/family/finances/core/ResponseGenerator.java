@@ -16,6 +16,14 @@ public class ResponseGenerator {
                 .setData(data);
     }
 
+    public static <T> Response<T> success(T data, String message) {
+        return new Response<T>()
+                .setCode(ResponseCode.SUCCESS.code())
+                .setMessage(message)
+                .setData(data);
+    }
+
+
     public static <T> Response<T> fail(String message) {
         return new Response<T>()
                 .setCode(ResponseCode.FAIL.code())
