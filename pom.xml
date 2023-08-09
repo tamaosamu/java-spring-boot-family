@@ -54,6 +54,11 @@
             <version>2.3.1</version>
             <scope>test</scope>
         </dependency>
+        <!-- 验证 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-validation</artifactId>
+        </dependency>
     </dependencies>
 
     <build>
