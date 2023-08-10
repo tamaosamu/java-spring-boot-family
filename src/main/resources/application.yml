@@ -1,3 +1,6 @@
+server:
+  port: 8083
+
 spring:
   application:
     name: family-demo
@@ -8,5 +11,3 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
 
 # mybatis配置
-mybatis:
-  type-aliases-package: com.family.entity    # 实体类所在的位置
