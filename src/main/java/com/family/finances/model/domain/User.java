@@ -14,8 +14,6 @@ import java.io.Serializable;
 @Builder
 public class User implements Serializable {
     private Integer id;
-    @JsonIgnore
-    private String salt;
 
     @NotEmpty(message = "用户名不可为空")
     private String username;
@@ -25,7 +23,10 @@ public class User implements Serializable {
     @Length(min = 6, message = "密码位数不能少于6")
     private String password;
 
+    @JsonIgnore
+    private String salt;
+
     @Tolerate
-    public User(){}
+    public User() {}
 }
 

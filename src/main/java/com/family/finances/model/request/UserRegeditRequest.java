@@ -8,4 +8,8 @@ public class UserRegeditRequest {
     private String username;
     private String password;
 
+    public UserRegeditRequest(String username, String password) {
+        this.username = username;
+        this.password = password;
+    }
 }

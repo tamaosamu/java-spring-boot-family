@@ -1,6 +1,7 @@
 package com.family.finances.service;
 
 import com.family.finances.model.domain.User;
+import com.family.finances.model.request.UserLoginResponse;
 import com.family.finances.model.request.UserRegeditRequest;
 
 public interface IUserService {
@@ -11,5 +12,5 @@ public interface IUserService {
 
     User fetchOne(String username);
 
-    User login(String username, String password);
+
 }
